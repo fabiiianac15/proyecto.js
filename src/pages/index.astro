@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import ButtonTwo from "../components/ButtonTwo.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<Button />
+	<Button text="Cancelar" isRounded />
+	<Button text="Permitir" />
+
+	<ButtonTwo>
+		<span slot="text"> Este es el boton </span>
+		<span slot="icon">X</span>
+	</ButtonTwo>
+</Layout>
